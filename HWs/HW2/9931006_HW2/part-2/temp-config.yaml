@@ -1,0 +1,10 @@
+apiVersion: v1
+kind: ConfigMap
+metadata:
+  name: temp-config
+data:
+  API_KEY: "waSUbz0YclQkXRErgqLM3g==CfH9igxWNSa3aoaY"
+  SERVER_PORT: "5001"
+  REDIS_TTL: "300"
+  # REDIS_HOST: "10.100.185.239"
+  REDIS_HOST: "redis-service.default"

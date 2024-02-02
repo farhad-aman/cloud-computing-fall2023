@@ -1,0 +1,31 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: temp-deployment
+  labels:
+    app: temp
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: temp
+  template:
+    metadata:
+      labels:
+        app: temp
+    spec:
+      containers:
+      - name: temp
+        image: feri80/temp-app:1.0.1
+        ports:
+        - containerPort: 5001
+        envFrom:
+        - configMapRef:
+            name: temp-config
+        resources:
+          limits:
+            cpu: 100m
+            memory: 128Mi
+          requests:
+            cpu: 100m
+            memory: 128Mi

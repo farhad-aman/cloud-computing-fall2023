@@ -1,0 +1,3 @@
+"C"     {"PageRank": 0.42260747808715815, "AdjacencyList": []}
+"B"     {"PageRank": 0.42260747808715815, "AdjacencyList": ["A"]}
+"A"     {"PageRank": 0.44407409023193356, "AdjacencyList": ["B", "C"]}

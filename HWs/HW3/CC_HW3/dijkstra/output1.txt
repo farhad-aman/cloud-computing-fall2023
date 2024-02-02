@@ -1,0 +1,5 @@
+"C"     {"Distance": 5, "AdjacencyList": {"E": 2, "B": 3, "D": 9}}
+"D"     {"Distance": Infinity, "AdjacencyList": {"E": 4}}
+"E"     {"Distance": Infinity, "AdjacencyList": {"A": 7, "D": 6}}
+"B"     {"Distance": 10, "AdjacencyList": {"C": 2, "D": 1}}
+"A"     {"Distance": 0, "AdjacencyList": {"B": 10, "C": 5}}
